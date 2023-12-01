@@ -1,0 +1,10 @@
+public class RGBColorModel extends ColorModel {
+    public RGBColorModel(int[] colorComponents, int alpha) {
+        super("RGB", colorComponents, alpha);
+    }
+
+    @Override
+    public void render(ColorRenderer renderer) {
+        renderer.renderRGB(colorComponents, alpha);
+    }
+}
