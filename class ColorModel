@@ -1,0 +1,13 @@
+public abstract class ColorModel {
+    protected String colorSpace;
+    protected int[] colorComponents;
+    protected int alpha;
+
+    public ColorModel(String colorSpace, int[] colorComponents, int alpha) {
+        this.colorSpace = colorSpace;
+        this.colorComponents = colorComponents;
+        this.alpha = alpha;
+    }
+
+    public abstract void render(ColorRenderer renderer);
+}
