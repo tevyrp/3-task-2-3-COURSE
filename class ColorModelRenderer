@@ -1,0 +1,13 @@
+public class ColorModelRenderer {
+    private ColorModel colorModel;
+    private ColorRenderer colorRenderer;
+
+    public ColorModelRenderer(ColorModel colorModel, ColorRenderer colorRenderer) {
+        this.colorModel = colorModel;
+        this.colorRenderer = colorRenderer;
+    }
+
+    public void render() {
+        colorModel.render(colorRenderer);
+    }
+}
