@@ -1,0 +1,10 @@
+public class CMYKColorModel extends ColorModel {
+    public CMYKColorModel(int[] colorComponents, int alpha) {
+        super("CMYK", colorComponents, alpha);
+    }
+
+    @Override
+    public void render(ColorRenderer renderer) {
+        renderer.renderCMYK(colorComponents, alpha);
+    }
+}
