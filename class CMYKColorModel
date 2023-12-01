@@ -8,3 +8,10 @@ public class CMYKColorModel extends ColorModel {
         renderer.renderCMYK(colorComponents, alpha);
     }
 }
+
+
+public interface ColorRenderer {
+    void renderRGB(int[] colorComponents, int alpha);
+    void renderCMYK(int[] colorComponents, int alpha);
+    void renderHSV(int[] colorComponents, int alpha);
+}
