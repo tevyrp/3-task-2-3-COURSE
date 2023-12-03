@@ -1,0 +1,11 @@
+public class Main {
+    public static void main(String[] args) {
+       
+        ColorRenderer colorRenderer = new ShapeRenderer();
+
+        ColorModel colorModel = new RGBColorModel(new int[]{255, 0, 0}, 255);
+
+        ColorModelRenderer colorModelRenderer = new ColorModelRenderer(colorModel, colorRenderer);
+        colorModelRenderer.render();
+    }
+}
